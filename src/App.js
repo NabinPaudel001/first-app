@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import { Greet } from './components/Greet';
+import Welcome from './components/Welcome';
 
 function App() {
   return (
@@ -7,7 +9,12 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <Greet name="Nabin" lname="Paudel">
+            <p>This is children props</p>
+          </Greet>
+          <Greet name="Ram" lname="Hari"/>
+          <Greet name="Krishna" lname="Kale"/>
+          <Welcome/>
         </p>
         <a
           className="App-link"
@@ -15,7 +22,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React With Nabin
         </a>
       </header>
     </div>
